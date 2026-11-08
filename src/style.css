@@ -1,0 +1,19 @@
+:root {
+  --bg: #f7f5f0; --fg: #1f2421; --muted: #6b6f6a; --line: #d9d5cc;
+  --accent: #2f6f5e; --warn: #a2541a; --ok: #2f6f5e;
+  font-family: system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #171a18; --fg: #e8e6e1; --muted: #9a9e98; --line: #33382f; --accent: #6fb8a2; --warn: #e0965a; --ok: #6fb8a2; }
+}
+body { background: var(--bg); color: var(--fg); margin: 0; padding: 24px 16px; max-width: 960px; margin-inline: auto; }
+h1 { margin: 0; color: var(--accent); letter-spacing: 0.02em; }
+.tagline { color: var(--muted); margin-top: 4px; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th, td { text-align: left; padding: 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { color: var(--muted); font-weight: 600; }
+td.missing { color: var(--warn); }
+#findings li { margin-bottom: 6px; color: var(--warn); }
+#findings li.ok { color: var(--ok); }
+button, .button { font: inherit; padding: 6px 12px; border: 1px solid var(--accent); background: transparent; color: var(--accent); border-radius: 6px; cursor: pointer; margin-right: 8px; display: inline-block; }
+.file-actions { margin-top: 24px; }
